@@ -11,7 +11,7 @@ public interface CategoryDAO {
             @Result(column = "cid", property = "cid"),
             @Result(column = "cname", property = "cname")
     })
-    public List<Category> getAllCategories();
+    List<Category> getAllCategories();
 
     @Select("SELECT * FROM categories where cid = #{cid};")
     @Results({
