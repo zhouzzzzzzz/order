@@ -42,5 +42,7 @@ cd /root/tomcat/
 sh bin/startup.sh
 echo $PROJ_PATH
 echo "$PROJ_PATH"
+echo "$TOMCAT_APP_PATH"
+echo $TOMCAT_APP_PATH
 echo "over  >>>>>  脚本全部执行完成！"
 
