@@ -27,22 +27,22 @@ mvn clean install
 killTomcat
 
 # 删除原有工程
-rm -rf /root/tomcat/webapps/ROOT
-rm -f /root/tomcat/webapps/ROOT.war
-rm -f /root/tomcat/webapps/order.war
+rm -rf $TOMCAT_APP_PATH/webapps/ROOT
+rm -f $TOMCAT_APP_PATH/webapps/ROOT.war
+rm -f $TOMCAT_APP_PATH/webapps/order.war
 
 # 复制新的工程
-#cp $PROJ_PATH/order/target/order.war $TOMCAT_APP_PATH/webapps/
-cp /root/.jenkins/workspace/DeployOrder/order/target/order.war /root/tomcat/webapps/
-#cd $TOMCAT_APP_PATH/webapps/
-cd /root/tomcat/webapps/
+cp $PROJ_PATH/order/target/order.war $TOMCAT_APP_PATH/webapps/
+#cp /root/.jenkins/workspace/DeployOrder/order/target/order.war /root/tomcat/webapps/
+cd $TOMCAT_APP_PATH/webapps/
+
 mv order.war ROOT.war
 # 启动Tomcat
-cd /root/tomcat/
+cd $TOMCAT_APP_PATH/
+
 sh bin/startup.sh
 echo $PROJ_PATH
-echo "$PROJ_PATH"
-echo "$TOMCAT_APP_PATH"
+
 echo $TOMCAT_APP_PATH
 echo "over  >>>>>  脚本全部执行完成！"
 
