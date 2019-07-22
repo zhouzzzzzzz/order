@@ -39,6 +39,6 @@ mv order.war ROOT.war
 # 启动Tomcat
 cd $TOMCAT_APP_PATH/
 sh bin/startup.sh
-
+echo $TOMCAT_APP_PATH
 echo "over  >>>>>  脚本全部执行完成！"
 
