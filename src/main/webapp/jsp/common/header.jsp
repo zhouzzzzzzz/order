@@ -13,7 +13,7 @@
             <a class="navbar-brand">
                 <small>
                     <i class="icon-leaf"></i>
-                    家常菜
+                    好吃的家常菜
                 </small>
             </a><!-- /.brand -->
         </div><!-- /.navbar-header -->
@@ -26,7 +26,7 @@
                         <img class="nav-user-photo" src="../assets/avatars/user.jpg" alt="Jason's Photo" />
                         <span class="user-info">
                             <small>欢迎光临,</small>
-                            小同学
+                            小仙女
                         </span>
                     </a>
                 </li>
